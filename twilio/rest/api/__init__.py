@@ -148,16 +148,9 @@ class Api(Domain):
 
     @property
     def validation_requests(self):
-        """
-        :rtype: twilio.rest.api.v2010.account.validation_request.ValidationRequestList
-        """
+
         return self.account.validation_requests
 
     def __repr__(self):
-        """
-        Provide a friendly representation
 
-        :returns: Machine friendly representation
-        :rtype: str
-        """
         return '<Twilio.Api>'
